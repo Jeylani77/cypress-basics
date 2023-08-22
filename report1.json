@@ -1,0 +1,400 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 10,
+    "passes": 9,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 10,
+    "passPercent": 90,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-06-04T23:10:19.326Z",
+    "end": "2023-06-04T23:12:45.550Z",
+    "duration": 146224
+  },
+  "results": [
+    {
+      "uuid": "57095c9e-6a22-4902-bbe3-c719312e3146",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fileUploadDemo.cy.js",
+      "file": "cypress\\e2e\\fileUploadDemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Upload file",
+          "fullTitle": "Upload file",
+          "timedOut": null,
+          "duration": 434,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\ncy.get('#myfile').attachFile('sample.txt');",
+          "err": {},
+          "uuid": "84e6a160-c7a4-494d-9bc5-31418be9231d",
+          "parentUUID": "57095c9e-6a22-4902-bbe3-c719312e3146",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Download file",
+          "fullTitle": "Download file",
+          "timedOut": null,
+          "duration": 582,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "07813267-cb60-4e3e-a239-aecdf61f3d40",
+          "parentUUID": "57095c9e-6a22-4902-bbe3-c719312e3146",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "84e6a160-c7a4-494d-9bc5-31418be9231d",
+        "07813267-cb60-4e3e-a239-aecdf61f3d40"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 1016,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4414fca2-ea2b-46a9-a20c-b89588c8d301",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pomDemo.cy.js",
+      "file": "cypress\\e2e\\pomDemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a49d233-9167-4cf4-876d-e7826ca40bc2",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login 1",
+              "fullTitle": "Login Test Login 1",
+              "timedOut": null,
+              "duration": 6458,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin12');\nloginPage.clickLoginButton();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "d9d88cfe-ebf1-4ef2-a0bc-ea768e4b7993",
+              "parentUUID": "9a49d233-9167-4cf4-876d-e7826ca40bc2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login 2",
+              "fullTitle": "Login Test Login 2",
+              "timedOut": null,
+              "duration": 2858,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLoginButton();",
+              "err": {},
+              "uuid": "5c44d33d-df04-4d6e-873d-c1f7a788c630",
+              "parentUUID": "9a49d233-9167-4cf4-876d-e7826ca40bc2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9d88cfe-ebf1-4ef2-a0bc-ea768e4b7993",
+            "5c44d33d-df04-4d6e-873d-c1f7a788c630"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9316,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "83460560-876e-446a-9bb1-78051cc6f414",
+      "title": "",
+      "fullFile": "cypress\\e2e\\readWriteFilesDemo.cy.js",
+      "file": "cypress\\e2e\\readWriteFilesDemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Read Files using Fixture",
+          "fullTitle": "Read Files using Fixture",
+          "timedOut": null,
+          "duration": 106,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.fixture('example.json').then(data => {\n  cy.log(data.name);\n  cy.log(data.email);\n  cy.log(data.body);\n});",
+          "err": {},
+          "uuid": "871dc9fc-04f7-494b-a9f9-c1ad94c1f64f",
+          "parentUUID": "83460560-876e-446a-9bb1-78051cc6f414",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Read Files usinf ReadFile",
+          "fullTitle": "Read Files usinf ReadFile",
+          "timedOut": null,
+          "duration": 54,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.readFile('./cypress/fixtures/example.json').then(data => {\n  cy.log(data.name);\n});",
+          "err": {},
+          "uuid": "a7a67576-052c-4cbe-8ebf-bca62adb3e24",
+          "parentUUID": "83460560-876e-446a-9bb1-78051cc6f414",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Write file demo",
+          "fullTitle": "Write file demo",
+          "timedOut": null,
+          "duration": 55,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.writeFile('./cypress/fixtures/sample.txt', 'Hello I am AKN\\n');\ncy.writeFile('./cypress/fixtures/sample.txt', 'I am learning cypress', {\n  flag: 'a+'\n});",
+          "err": {},
+          "uuid": "45fb26d3-5a57-4da0-b14c-e8b283850d8f",
+          "parentUUID": "83460560-876e-446a-9bb1-78051cc6f414",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "871dc9fc-04f7-494b-a9f9-c1ad94c1f64f",
+        "a7a67576-052c-4cbe-8ebf-bca62adb3e24",
+        "45fb26d3-5a57-4da0-b14c-e8b283850d8f"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 215,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6d962fa4-71b0-4ee8-9ebc-437fb367bb03",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ceef40a-36b7-432a-9bad-7c02a57b899c",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 604,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "dc6a8619-de5d-4e5f-bae6-5372b173c6f9",
+              "parentUUID": "4ceef40a-36b7-432a-9bad-7c02a57b899c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc6a8619-de5d-4e5f-bae6-5372b173c6f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 604,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bdc1986f-bbb1-44c7-a44d-5cc552ba1119",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test1.cy.js",
+      "file": "cypress\\e2e\\test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google Search",
+          "fullTitle": "Google Search",
+          "timedOut": null,
+          "duration": 94241,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://google.com');\ncy.get('.SDkEP').type('OK{Enter}');\ncy.wait(5000);\ncy.contains('Video').click();",
+          "err": {
+            "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+            "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.google.com/__cypress/runner/cypress_runner.js:146720:72)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:147018:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://www.google.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://www.google.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://www.google.com/__cypress/runner/cypress_runner.js:13330:14)",
+            "diff": null
+          },
+          "uuid": "51e08d5a-b643-441c-9d87-5f1e85d4191a",
+          "parentUUID": "bdc1986f-bbb1-44c7-a44d-5cc552ba1119",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "51e08d5a-b643-441c-9d87-5f1e85d4191a"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 94241,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1d9f5486-8f07-486d-bd30-ee6209feb8cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertionsDemo.cy.js",
+      "file": "cypress\\e2e\\assertionsDemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Assertions Demo",
+          "fullTitle": "Assertions Demo",
+          "timedOut": null,
+          "duration": 1674,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://example.cypress.io');\n//cy.wait(5000)\ncy.contains('get').click();\ncy.get('#query-btn').should('contain', 'Button').and('be.visible').and('be.enabled');\nassert.strictEqual('4', '4', 'EQUAL');",
+          "err": {},
+          "uuid": "4fba7a99-3626-4b3f-838b-9481887624d2",
+          "parentUUID": "1d9f5486-8f07-486d-bd30-ee6209feb8cc",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "4fba7a99-3626-4b3f-838b-9481887624d2"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 1674,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
